@@ -1,5 +1,5 @@
-import { ThemeSwitch } from "@/components/theme-switch";
-import Link from "next/link";
+import { ThemeSwitch } from '@/components/theme-switch';
+import Link from 'next/link';
 
 export default function Home() {
   return (

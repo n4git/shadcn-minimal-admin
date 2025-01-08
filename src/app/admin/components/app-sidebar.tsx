@@ -1,17 +1,12 @@
-"use client"
+'use client';
 
-import * as React from "react"
+import * as React from 'react';
 
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarHeader,
-  SidebarRail,
-} from "@/components/ui/sidebar"
+import { Sidebar, SidebarContent, SidebarHeader, SidebarRail } from '@/components/ui/sidebar';
 
-import { NavGroups } from "./nav-groups"
-import { TeamSwitcher } from "./team-switcher"
-import { sidebarData } from './layout/data/sidebar-data'
+import { NavGroups } from './nav-groups';
+import { TeamSwitcher } from './team-switcher';
+import { sidebarData } from './layout/data/sidebar-data';
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -24,5 +19,5 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarContent>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }

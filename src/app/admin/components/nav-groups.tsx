@@ -1,13 +1,9 @@
-"use client"
+'use client';
 
-import Link from "next/link"
-import { ChevronRight } from "lucide-react"
+import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
 
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import {
   SidebarGroup,
   SidebarMenu,
@@ -16,24 +12,16 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
-} from "@/components/ui/sidebar"
+} from '@/components/ui/sidebar';
 
-import { NavGroup } from "./layout/types"
+import { NavGroup } from './layout/types';
 
-export function NavGroups({
-  groups,
-}: {
-  groups: NavGroup[]
-}) {
+export function NavGroups({ groups }: { groups: NavGroup[] }) {
   return (
     <SidebarGroup>
       <SidebarMenu>
         {groups.map((group) => (
-          <Collapsible
-            key={group.title}
-            asChild
-            className="group/collapsible"
-          >
+          <Collapsible key={group.title} asChild className="group/collapsible">
             <SidebarMenuItem>
               <CollapsibleTrigger asChild>
                 <SidebarMenuButton tooltip={group.title}>
@@ -59,5 +47,5 @@ export function NavGroups({
         ))}
       </SidebarMenu>
     </SidebarGroup>
-  )
+  );
 }
