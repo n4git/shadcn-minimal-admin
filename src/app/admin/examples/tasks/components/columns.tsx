@@ -16,13 +16,13 @@ export const columns: ColumnDef<Task>[] = [
     header: ({ table }) => (
       <Checkbox
         checked={table.getIsAllPageRowsSelected() || (table.getIsSomePageRowsSelected() && 'indeterminate')}
-        onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
+        onCheckedChange={value => table.toggleAllPageRowsSelected(!!value)}
         aria-label="Select all"
         className="translate-y-[2px]"
       />
     ),
     cell: ({ row }) => (
-      <Checkbox checked={row.getIsSelected()} onCheckedChange={(value) => row.toggleSelected(!!value)} aria-label="Select row" className="translate-y-[2px]" />
+      <Checkbox checked={row.getIsSelected()} onCheckedChange={value => row.toggleSelected(!!value)} aria-label="Select row" className="translate-y-[2px]" />
     ),
     enableSorting: false,
     enableHiding: false,
@@ -38,7 +38,7 @@ export const columns: ColumnDef<Task>[] = [
     accessorKey: 'title',
     header: ({ column }) => <DataTableColumnHeader column={column} title="Title" />,
     cell: ({ row }) => {
-      const label = labels.find((label) => label.value === row.original.label);
+      const label = labels.find(label => label.value === row.original.label);
 
       return (
         <div className="flex space-x-2">
@@ -52,7 +52,7 @@ export const columns: ColumnDef<Task>[] = [
     accessorKey: 'status',
     header: ({ column }) => <DataTableColumnHeader column={column} title="Status" />,
     cell: ({ row }) => {
-      const status = statuses.find((status) => status.value === row.getValue('status'));
+      const status = statuses.find(status => status.value === row.getValue('status'));
 
       if (!status) {
         return null;
@@ -71,7 +71,7 @@ export const columns: ColumnDef<Task>[] = [
     accessorKey: 'priority',
     header: ({ column }) => <DataTableColumnHeader column={column} title="Priority" />,
     cell: ({ row }) => {
-      const priority = priorities.find((e) => e.value === row.getValue('priority'));
+      const priority = priorities.find(e => e.value === row.getValue('priority'));
 
       if (!priority) {
         return null;

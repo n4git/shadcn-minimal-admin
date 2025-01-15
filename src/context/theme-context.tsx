@@ -36,7 +36,7 @@ export function ThemeProvider({
     if (storedTheme) {
       _setTheme(storedTheme);
     }
-  }, []);
+  }, [storageKey]);
 
   useEffect(() => {
     const root = window.document.documentElement
@@ -79,7 +79,6 @@ export function ThemeProvider({
   )
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useTheme = () => {
   const context = useContext(ThemeProviderContext)
 

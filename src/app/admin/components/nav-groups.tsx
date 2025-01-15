@@ -20,7 +20,7 @@ export function NavGroups({ groups }: { groups: NavGroup[] }) {
   return (
     <SidebarGroup>
       <SidebarMenu>
-        {groups.map((group) => (
+        {groups.map(group => (
           <Collapsible key={group.title} asChild className="group/collapsible">
             <SidebarMenuItem>
               <CollapsibleTrigger asChild>
@@ -31,7 +31,7 @@ export function NavGroups({ groups }: { groups: NavGroup[] }) {
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <SidebarMenuSub>
-                  {group.items?.map((item) => (
+                  {group.items?.map(item => (
                     <SidebarMenuSubItem key={item.title}>
                       <SidebarMenuSubButton asChild>
                         <Link href={item.url}>

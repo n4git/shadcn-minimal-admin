@@ -23,7 +23,7 @@ export function DataTableToolbar<TData>({ table }: DataTableToolbarProps<TData>)
         <Input
           placeholder="Filter tasks..."
           value={(table.getColumn('title')?.getFilterValue() as string) ?? ''}
-          onChange={(event) => table.getColumn('title')?.setFilterValue(event.target.value)}
+          onChange={event => table.getColumn('title')?.setFilterValue(event.target.value)}
           className="h-8 w-[150px] lg:w-[250px]"
         />
         {table.getColumn('status') && <DataTableFacetedFilter column={table.getColumn('status')} title="Status" options={statuses} />}
