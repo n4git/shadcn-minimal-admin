@@ -1,11 +1,11 @@
-import { promises as fs } from 'fs';
-import path from 'path';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { promises as fs } from 'node:fs';
+import path from 'node:path';
 import { z } from 'zod';
 
+import { taskSchema } from './data/schema';
 import { columns } from './components/columns';
 import { DataTable } from './components/data-table';
-import { taskSchema } from './data/schema';
 
 export const metadata: Metadata = {
   title: 'Tasks',

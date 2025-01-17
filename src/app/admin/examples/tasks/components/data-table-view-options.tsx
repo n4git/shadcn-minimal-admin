@@ -1,7 +1,7 @@
 'use client';
 
+import type { Table } from '@tanstack/react-table';
 import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
-import { Table } from '@tanstack/react-table';
 import { Settings2 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';

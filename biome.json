@@ -1,0 +1,17 @@
+{
+  "formatter": {
+    "enabled": false
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "files": {
+    "include": ["src/app/**/*", "*.mjs"]
+  }
+}

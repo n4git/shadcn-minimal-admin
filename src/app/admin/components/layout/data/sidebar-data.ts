@@ -1,7 +1,8 @@
 'use client';
 
 import { AudioWaveform, Command, GalleryVerticalEnd } from 'lucide-react';
-import { type SidebarData } from '../types';
+
+import type { SidebarData } from '../types';
 
 export const sidebarData: SidebarData = {
   teams: [{

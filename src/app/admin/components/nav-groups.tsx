@@ -14,7 +14,7 @@ import {
   SidebarMenuSubItem,
 } from '@/components/ui/sidebar';
 
-import { NavGroup } from './layout/types';
+import type { NavGroup } from './layout/types';
 
 export function NavGroups({ groups }: { groups: NavGroup[] }) {
   return (
