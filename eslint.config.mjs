@@ -15,7 +15,6 @@ const eslintConfig = [
     files: ['src/app/**/*', '*.mjs'],
     rules: {
       'semi': ['warn', 'always'],
-      'indent': ['warn', 2, { SwitchCase: 1 }],
       'quotes': ['warn', 'single'],
       'padded-blocks': ['warn', 'never'],
       'no-trailing-spaces': 'warn',
@@ -30,6 +29,8 @@ const eslintConfig = [
         'ImportDeclaration': { 'multiline': true, 'minProperties': 5 },
         'ExportDeclaration': { 'multiline': true, 'minProperties': 5 },
       }],
+
+      '@stylistic/indent': ['warn', 2, { SwitchCase: 1 }],
 
       'react/jsx-max-props-per-line': ['warn', { 'maximum': 1, 'when': 'always' }],
       'react/jsx-first-prop-new-line': ['warn', 'multiline'],
