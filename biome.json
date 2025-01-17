@@ -12,6 +12,6 @@
     }
   },
   "files": {
-    "include": ["src/app/**/*", "*.mjs"]
+    "include": ["src/app/**/*", "*.mjs", "*.ts"]
   }
 }

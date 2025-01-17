@@ -12,12 +12,13 @@ const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
     ...stylistic.configs.customize(),
-    files: ['src/app/**/*', '*.mjs'],
+    files: ['src/app/**/*', '*.{mjs,ts}'],
     rules: {
       'semi': ['warn', 'always'],
       'quotes': ['warn', 'single'],
       'padded-blocks': ['warn', 'never'],
       'no-trailing-spaces': 'warn',
+      'no-multi-spaces': 'warn',
       'no-multiple-empty-lines': ['warn', { max: 1 }],
       'brace-style': ['warn', '1tbs'],
       'comma-spacing': ['warn', { 'before': false, 'after': true }],
