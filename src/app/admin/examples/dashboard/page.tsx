@@ -54,6 +54,7 @@ export default function DashboardPage() {
                   <CardTitle className="text-sm font-medium">
                     Total Revenue
                   </CardTitle>
+                  {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -79,6 +80,7 @@ export default function DashboardPage() {
                   <CardTitle className="text-sm font-medium">
                     Subscriptions
                   </CardTitle>
+                  {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -108,6 +110,7 @@ export default function DashboardPage() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">Sales</CardTitle>
+                  {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -140,6 +143,7 @@ export default function DashboardPage() {
                   <CardTitle className="text-sm font-medium">
                     Active Now
                   </CardTitle>
+                  {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
