@@ -21,7 +21,11 @@ export function NavGroups({ groups }: { groups: NavGroup[] }) {
     <SidebarGroup>
       <SidebarMenu>
         {groups.map(group => (
-          <Collapsible key={group.title} asChild className="group/collapsible">
+          <Collapsible
+            key={group.title}
+            asChild
+            className="group/collapsible"
+          >
             <SidebarMenuItem>
               <CollapsibleTrigger asChild>
                 <SidebarMenuButton tooltip={group.title}>

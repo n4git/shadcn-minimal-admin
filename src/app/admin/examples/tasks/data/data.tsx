@@ -1,4 +1,6 @@
-import { ArrowDown, ArrowRight, ArrowUp, CheckCircle, Circle, CircleOff, HelpCircle, Timer } from 'lucide-react';
+import {
+  ArrowDown, ArrowRight, ArrowUp, CheckCircle, Circle, CircleOff, HelpCircle, Timer,
+} from 'lucide-react';
 
 export const labels = [{
   value: 'bug',

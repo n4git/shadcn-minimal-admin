@@ -16,16 +16,17 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: 'shadcn sandbox',
-};
+export const metadata: Metadata = { title: 'shadcn sandbox' };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <StrictMode>
-          <ThemeProvider defaultTheme="light" storageKey="ui-theme">
+          <ThemeProvider
+            defaultTheme="light"
+            storageKey="ui-theme"
+          >
             {children}
           </ThemeProvider>
         </StrictMode>
