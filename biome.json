@@ -12,6 +12,6 @@
     }
   },
   "files": {
-    "include": ["src/app/**/*", "*.mjs", "*.ts"]
+    "ignore": ["node_modules/", "src/shadcn/**/*"]
   }
 }
