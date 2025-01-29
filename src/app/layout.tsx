@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { StrictMode } from 'react';
 
-import { ThemeProvider } from '@/shadcn/context/theme-context';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -20,12 +20,18 @@ export const metadata: Metadata = { title: 'shadcn sandbox' };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+    >
+      <head />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <StrictMode>
           <ThemeProvider
-            defaultTheme="light"
-            storageKey="ui-theme"
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
           >
             {children}
           </ThemeProvider>

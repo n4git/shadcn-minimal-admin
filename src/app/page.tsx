@@ -1,4 +1,4 @@
-import { ThemeSwitch } from '@/shadcn/components/theme-switch';
+import { ModeToggle } from '@/components/mode-toggle';
 import Link from 'next/link';
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
           >
             /admin
           </Link>
-          <ThemeSwitch />
+          <ModeToggle />
         </div>
       </main>
     </div>
