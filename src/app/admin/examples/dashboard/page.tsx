@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from '@/shadcn/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/shadcn/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/shadcn/components/ui/tabs';
 import { MainNav } from './components/main-nav';
-import { ThemeSwitch } from '@/components/theme-switch';
+import { ThemeSwitch } from '@/shadcn/components/theme-switch';
 
 export const metadata: Metadata = {
   title: 'Dashboard',

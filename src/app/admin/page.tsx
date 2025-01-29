@@ -1,4 +1,4 @@
-import { ThemeSwitch } from '@/components/theme-switch';
+import { ThemeSwitch } from '@/shadcn/components/theme-switch';
 
 export default function Page() {
   return (

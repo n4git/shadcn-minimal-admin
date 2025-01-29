@@ -2,7 +2,7 @@
 
 import type * as React from 'react';
 
-import { Sidebar, SidebarContent, SidebarHeader, SidebarRail } from '@/components/ui/sidebar';
+import { Sidebar, SidebarContent, SidebarHeader, SidebarRail } from '@/shadcn/components/ui/sidebar';
 
 import { NavGroups } from './nav-groups';
 import { TeamSwitcher } from './team-switcher';

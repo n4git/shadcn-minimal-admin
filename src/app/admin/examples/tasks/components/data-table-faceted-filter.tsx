@@ -2,14 +2,14 @@ import type * as React from 'react';
 import type { Column } from '@tanstack/react-table';
 import { Check, PlusCircle } from 'lucide-react';
 
-import { cn } from '@/lib/utils';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { cn } from '@/shadcn/lib/utils';
+import { Badge } from '@/shadcn/components/ui/badge';
+import { Button } from '@/shadcn/components/ui/button';
 import {
   Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator,
-} from '@/components/ui/command';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Separator } from '@/components/ui/separator';
+} from '@/shadcn/components/ui/command';
+import { Popover, PopoverContent, PopoverTrigger } from '@/shadcn/components/ui/popover';
+import { Separator } from '@/shadcn/components/ui/separator';
 
 interface DataTableFacetedFilterProps<TData, TValue> {
   column?: Column<TData, TValue>;

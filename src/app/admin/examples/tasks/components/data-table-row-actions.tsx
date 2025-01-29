@@ -3,7 +3,7 @@
 import type { Row } from '@tanstack/react-table';
 import { MoreHorizontal } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '@/shadcn/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,7 +16,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from '@/shadcn/components/ui/dropdown-menu';
 
 import { taskSchema } from '../data/schema';
 import { labels } from '../data/data';

@@ -1,5 +1,5 @@
 import { AppSidebar } from './components/app-sidebar';
-import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
+import { SidebarInset, SidebarProvider } from '@/shadcn/components/ui/sidebar';
 
 export default function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

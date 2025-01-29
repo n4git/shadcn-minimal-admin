@@ -1,4 +1,4 @@
-import { ThemeSwitch } from '@/components/theme-switch';
+import { ThemeSwitch } from '@/shadcn/components/theme-switch';
 import Link from 'next/link';
 
 export default function Home() {
